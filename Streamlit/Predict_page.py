@@ -3,13 +3,13 @@ import numpy as np
 import pickle
 
 def load_model():
-    file_name = r"C:\Users\shounak lohokare\Desktop\Python Basics\Credit_Card_Fraud\Flask_API\model_XGBC.p"
+    file_name = r"Flask_API\model_XGBC.p"
     with open(file_name, "rb") as pickled:
         data = pickle.load(pickled)
         model = data['model']
     return model
 def Load_Dictionary():
-    with open('Dicts\Cities.pkl', 'rb') as f:
+    with open(r'Dicts\Cities.pkl', 'rb') as f:
         cities = pickle.load(f)
 
     with open('Dicts\States.pkl', 'rb') as f:
