@@ -64,7 +64,7 @@ def Predict_Page():
 
     category = categories[category]
 
-    Age = int(st.text_input("Age", value = "0"))
+    Age = float(st.text_input("Age", value = "0"))
 
     Hour = int(st.text_input("Hour of Transaction Time",value = "0"))
 
