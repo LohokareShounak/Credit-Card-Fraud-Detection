@@ -2,3 +2,6 @@ LargeFiles/
 .ipynb_checkpoints/
 Data_Visualization.ipynb
 Flask_API/Dash_Notebook.ipynb
+Flask_API/__pycache__
+Streamlit/__pycache__
+
