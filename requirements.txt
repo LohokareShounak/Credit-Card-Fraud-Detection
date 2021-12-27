@@ -19,6 +19,6 @@ threadpoolctl==3.0.0
 typing_extensions==4.0.1
 Werkzeug==2.0.2
 wincertstore==0.2
-xgboost
+xgboost==1.4.2
 zipp==3.6.0
 streamlit
