@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 def load_model():
-    file_name = r"Flask_API\model_XGBC.p"
+    file_name = r"Flask_API/model_XGBC.p"
     with open(file_name, "rb") as pickled:
         data = pickle.load(pickled)
         model = data['model']
@@ -12,19 +12,19 @@ def Load_Dictionary():
     with open(r'Dicts/Cities.pkl', 'rb') as f:
         cities = pickle.load(f)
 
-    with open('Dicts\States.pkl', 'rb') as f:
+    with open(r'Dicts/States.pkl', 'rb') as f:
         states = pickle.load(f)
         
-    with open('Dicts\Merchants.pkl', 'rb') as f:
+    with open(r'Dicts/Merchants.pkl', 'rb') as f:
         merchants = pickle.load(f)
 
-    with open('Dicts\Jobs.pkl', 'rb') as f:
+    with open(r'Dicts/Jobs.pkl', 'rb') as f:
         jobs = pickle.load(f)
         
-    with open('Dicts\Days.pkl', 'rb') as f:
+    with open(r'Dicts/Days.pkl', 'rb') as f:
         days = pickle.load(f)
 
-    with open('Dicts\Category.pkl', 'rb') as f:
+    with open(r'Dicts/Category.pkl', 'rb') as f:
         category = pickle.load(f)
     return cities, states, merchants, jobs, days, category
 
