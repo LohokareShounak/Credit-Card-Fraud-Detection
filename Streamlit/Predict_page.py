@@ -78,8 +78,8 @@ def Predict_Page():
     if Age > 0 and Hour >= 0 and Distance >= 0 and Fraud_amt > -1 and Legit_amt > -1:
         model = load_model()
 
-        Data = np.array([int(Hour) ,state ,merchant, int(Age), day
-                        , job, category, float(Fraud_amt) + float(Legit_amt), float(Distance), float(Fraud_amt), float(Legit_amt), float(Fraud_amt)]).reshape(-1, 1).astype(np.float).transpose()
+        Data = np.array([Hour ,state ,merchant, Age, day
+                        , job, category, Fraud_amt + Legit_amt, Distance, Fraud_amt, Legit_amt, Fraud_amt]).reshape(-1, 1).astype(np.float).transpose()
 
 
         preds = model.predict(Data).tolist()
