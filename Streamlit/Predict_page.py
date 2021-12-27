@@ -9,7 +9,7 @@ def load_model():
         model = data['model']
     return model
 def Load_Dictionary():
-    with open(r'Dicts\Cities.pkl', 'rb') as f:
+    with open(r'Dicts/Cities.pkl', 'rb') as f:
         cities = pickle.load(f)
 
     with open('Dicts\States.pkl', 'rb') as f:
